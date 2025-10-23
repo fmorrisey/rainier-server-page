@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rainier Server | About</title>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+      background: url('/assets/rainier-sunset.jpg')
+                  no-repeat center center fixed;
+      background-size: cover;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(20, 20, 30, 0.75);
+      z-index: -1;
+    }
+    h1, h2 {
+      color: #00b4d8;
+    }
+    a {
+      color: #00b4d8;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+    a:hover {
+      color: #48cae4;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+    }
+    code {
+      background: rgba(255,255,255,0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    ul { padding-left: 1.2rem; }
+    blockquote {
+      border-left: 4px solid #00b4d8;
+      margin: 1rem 0;
+      padding-left: 1rem;
+      color: #ccc;
+      font-style: italic;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .link-btn {
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    }
+    .link-btn:hover {
+      background: rgba(255,255,255,0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏔 Rainier Server</h1>
+    <p><strong>Host:</strong> HP Z440 Workstation<br>
+       <strong>OS:</strong> Ubuntu 24.04 LTS (Noble Numbat)<br>
+       <strong>Purpose:</strong> Development & AI/ML Playground<br>
+       <strong>Access:</strong> Private Network (secured via Tailscale)
+    </p>
+
+    <h2>About</h2>
+    <p>Rainier is my personal hybrid workstation and homelab — part data center, part creative studio, and part mountain.  
+    It serves as a sandbox for development, experimentation, and machine learning research, blending performance hardware with flexible software environments.</p>
+
+    <h2>System Specs</h2>
+    <ul>
+      <li>Intel Xeon E5-2690 v4 — 14 cores / 28 threads</li>
+      <li>64 GB DDR4 ECC Registered RAM</li>
+      <li>NVIDIA RTX A4000 + Quadro P2000</li>
+      <li>2 × 2 TB NVMe (mirror) + 3 × 12 TB RAIDZ1 (Exos X18)</li>
+      <li>Networking: Intel i350 dual GbE + Tailscale</li>
+    </ul>
+
+    <h2>Services</h2>
+    <ul>
+      <li>Plex Media Server</li>
+      <li>Grafana + Prometheus (System Monitoring)</li>
+      <li>Node.js / Python Development Environment</li>
+      <li>Ollama — Local LLM Playground</li>
+      <li>Minecraft Server - We gotta have some fun right?</li> 
+    </ul>
+
+    <h2>AI / ML Playground 🧠</h2>
+    <p>Rainier runs an <strong>AI and Machine Learning lab</strong> powered by <strong>PyTorch</strong>, optimized for GPU-accelerated deep-learning training and inference.  
+       It’s a private space to prototype models, fine-tune architectures, and explore AI workflows on dedicated hardware.</p>
+
+    <h2>Philosophy</h2>
+    <blockquote>
+      “Like its namesake, Rainier stands tall as both a testbed and a summit —  
+      a reminder that every build, every climb, and every experiment is a step toward mastery.”
+    </blockquote>
+
+    <h2>Connect</h2>
+    <div class="links">
+      <a class="link-btn" href="https://github.com/fmorrisey" target="_blank" rel="noopener">GitHub</a>
+      <a class="link-btn" href="https://www.linkedin.com/in/forrestmorrisey/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link-btn" href="https://www.forrestmorrisey.com/" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+
+    <footer>
+      © 2025 Forrest Morrisey — Photo by 
+      <a href="https://unsplash.com/photos/snow-covered-mountain-during-daytime-TXiBwX0kg-Q" target="_blank" rel="noopener">Caleb Ralston / Unsplash</a> — Hosted on Rainier 🏔
+    </footer>
+  </div>
+</body>
+</html>
